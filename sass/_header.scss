@@ -76,6 +76,84 @@ header {
     }
 }
 
+.header-center {
+    background-color: $blue;
+    height: 6rem;
+    padding: 0 5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+
+        button i {
+            font-size: 2.5rem;
+            color: $white;
+            margin-top: 0.5rem;
+        }
+
+        img {
+            max-width: 10rem;
+        }
+    }
+
+    .resources {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease 0s;
+
+        a {
+            color: $white;
+            font-size: 1.4rem;
+
+            &:nth-child(2) {
+                padding-right: 1rem;
+                padding-left: 0.5rem;
+            }
+
+            &:hover {
+                color: $yellow;
+            }
+        }
+
+        .search-wrapper {
+            background-color: rgba(30, 30, 30, 22%);
+            padding: 0.7rem 1rem;
+            border-radius: 0.4rem;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+
+            input {
+                max-width: 20.7rem;
+                background: none;
+                border: 0;
+
+                color: $white;
+
+                &::placeholder {
+                    color: $lightgray;
+                }
+            }
+
+            .search-btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: $white;
+            }
+        }
+    }
+}
+
 /* ANIMATIONS */
 @keyframes translateY {
     from {
