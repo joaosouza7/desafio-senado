@@ -1,0 +1,22 @@
+@import "colors";
+
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+        width: 100%;
+        height: 0.1rem;
+        background-color: $lightgray;
+    }
+
+    h1 {
+        width: 100%;
+        max-width: 18rem;
+        color: $blue;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+}
