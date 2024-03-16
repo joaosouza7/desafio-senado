@@ -227,7 +227,7 @@
     }
 }
 
-/*---- SWIPER GALLERY ------*/
+/*---- GALLERY ------*/
 .gallery {
     margin-top: 4.6rem;
 
@@ -286,5 +286,17 @@
                 }
             }
         }
+    }
+}
+
+/*---- BILLS ------*/
+.bills {
+    margin-top: 4.6rem;
+
+    .bills-area {
+        display: flex;
+        align-items: center;
+        gap: 4.3rem;
+        margin-top: 31px;
     }
 }
