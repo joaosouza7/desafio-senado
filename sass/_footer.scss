@@ -90,3 +90,26 @@ footer {
         padding-right: 0.8rem;
     }
 }
+
+.btn-up {
+    position: absolute;
+    top: 292rem;
+    right: 3rem;
+    z-index: 99;
+
+    i {
+        font-size: 4.2rem;
+        color: $yellow;
+    }
+}
+
+.btn-libras {
+    position: fixed;
+    top: 17.7rem;
+    right: 3rem;
+    z-index: 99;
+
+    img {
+        width: 4.2rem;
+    }
+}
