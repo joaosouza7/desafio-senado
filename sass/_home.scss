@@ -289,14 +289,16 @@
     }
 }
 
-/*---- BILLS ------*/
-.bills {
+/*---- BILLS/STATEMENTS ------*/
+.bills,
+.statements {
     margin-top: 4.6rem;
+}
 
-    .bills-area {
-        display: flex;
-        align-items: center;
-        gap: 4.3rem;
-        margin-top: 31px;
-    }
+.bills-area,
+.statements-area {
+    display: flex;
+    align-items: center;
+    gap: 4.3rem;
+    margin-top: 31px;
 }
