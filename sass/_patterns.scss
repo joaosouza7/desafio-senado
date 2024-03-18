@@ -1,9 +1,5 @@
 @import "colors";
 
-main {
-    padding-bottom: 4.5rem;
-}
-
 .title {
     width: 100%;
     display: flex;
@@ -29,7 +25,7 @@ main {
 .card-news {
     width: 100%;
     max-width: 26.8rem;
-    max-height: 245px;
+    max-height: 24.5rem;
 
     box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 25%);
     border-radius: 0.4rem;
@@ -49,13 +45,14 @@ main {
     }
 
     .img-news {
-        width: 26.8rem;
+        width: 100%;
+        object-fit: cover;
         height: 18.3rem;
+    }
 
-        img {
-            width: 100%;
-            height: 100%;
-        }
+    .card-text {
+        height: 70px;
+        padding: 0.2rem;
     }
 
     .title-news {
@@ -73,8 +70,8 @@ main {
 .card-especial {
     margin-top: 3.3rem;
     width: 100%;
-    max-width: 30.2rem;
-    height: 38rem;
+    max-width: 30rem;
+    max-height: 38rem;
     box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 25%);
     border-radius: 0.4rem;
 
@@ -175,14 +172,14 @@ main {
 .card-simple {
     width: 100%;
     max-width: 39.8rem;
-    min-height: 15rem;
+    height: 15rem;
     box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 25%);
     border-radius: 0.4rem;
+    overflow: hidden;
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 1.5rem;
+    justify-content: center;
 
     transition: all 0.3s ease 0s;
 
@@ -198,8 +195,8 @@ main {
 
     .simple-card-text {
         width: 40%;
-        font: italic 300 1.3rem Poppins, sans-serif;
-        padding: 0 1rem;
+        font: italic 400 1.2rem Poppins, sans-serif;
+        padding: 1rem;
         color: $black;
     }
 }
@@ -222,5 +219,45 @@ main {
         width: 100%;
         height: 0.3rem;
         background-color: $lightblue;
+    }
+}
+
+/************* MOBILE *****************/
+@media (max-width: 765px) {
+    .card-news {
+        width: 100%;
+        max-width: 495px;
+    }
+
+    .card-especial {
+        width: 100%;
+        max-width: 495px;
+
+        .card-especial-header {
+            width: 100%;
+
+            .img-especial {
+                max-width: 100%;
+                max-height: 180px;
+            }
+        }
+
+        .card-especial-content {
+            .card-especial-title {
+                height: 4rem;
+                text-align: center;
+            }
+
+            .card-especial-text {
+                margin-top: 1rem;
+                margin-bottom: 2rem;
+                height: 50px;
+                text-align: center;
+            }
+
+            .card-especial-info {
+                margin-bottom: 1rem;
+            }
+        }
     }
 }

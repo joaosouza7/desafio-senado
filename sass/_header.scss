@@ -33,6 +33,20 @@ header {
     .logo-senado img {
         max-width: 16.8rem;
     }
+
+    .phone-mobile {
+        display: none;
+
+        a {
+            font-size: 2rem;
+            color: $white;
+            transition: all 0.3s ease 0s;
+
+            &:hover {
+                color: $yellow;
+            }
+        }
+    }
 }
 
 .socials {
@@ -159,6 +173,18 @@ header {
         display: flex;
         gap: 20px;
     }
+
+    .menu-section-mobile {
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        display: none;
+
+        i {
+            color: $white;
+            font-size: 1.8rem;
+        }
+    }
 }
 
 .navbar {
@@ -243,7 +269,58 @@ header {
     }
 }
 
-/* ANIMATIONS */
+/************* MOBILE *****************/
+@media (max-width: 987px) {
+    .header-center .link-header {
+        display: none;
+    }
+
+    .header-bottom {
+        .navbar {
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+        .links {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 765px) {
+    .header-top {
+        .language,
+        .socials {
+            display: none;
+        }
+
+        .phone-mobile {
+            display: block;
+        }
+    }
+
+    .header-center {
+        .resources {
+            .search-wrapper {
+                input {
+                    max-width: 10rem;
+                }
+            }
+        }
+    }
+
+    .header-bottom {
+        .navbar {
+            display: none;
+        }
+
+        .menu-section-mobile {
+            display: flex;
+        }
+    }
+}
+
+/************* ANIMATIONS *****************/
 @keyframes translateY {
     from {
         transform: translateY(0) scale(1);
