@@ -19,6 +19,7 @@
         max-width: 18rem;
         color: $blue;
         font-size: 1.8rem;
+        font-weight: 500;
         text-align: center;
     }
 }
@@ -265,5 +266,26 @@
                 margin-bottom: 1rem;
             }
         }
+    }
+}
+
+@media (max-width: 590px) {
+    .title {
+        span {
+            display: none;
+        }
+        h1 {
+            font-weight: 600;
+        }
+    }
+
+    .subtitle {
+        a {
+            font-weight: 600;
+        }
+        span {
+            display: none;
+        }
+        max-width: 100%;
     }
 }

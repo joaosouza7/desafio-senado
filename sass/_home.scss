@@ -529,6 +529,11 @@
 }
 
 @media (max-width: 590px) {
+    .main-content {
+        p {
+            display: none;
+        }
+    }
     .gallery {
         .swiper {
             height: 100%;
