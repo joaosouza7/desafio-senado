@@ -1,3 +1,5 @@
+@import "colors";
+
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +8,19 @@
     list-style: none;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
+}
+
+::-webkit-scrollbar {
+    width: 0.8rem;
+}
+
+::-webkit-scrollbar-track {
+    background: $lightgray;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $lightblue;
+    border-radius: 0.2rem;
 }
 
 html {
