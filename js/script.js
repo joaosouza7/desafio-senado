@@ -1,3 +1,7 @@
+document.addEventListener("DOMContentLoaded", () => {
+    btnlastNews.classList.add("active");
+});
+
 /************* SWIPER WEB STORIES *************/
 var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
@@ -84,4 +88,24 @@ submenuTitles.forEach((title) => {
     title.addEventListener("click", () => {
         menu.classList.remove("submenu-active");
     });
+});
+
+/************* CHANGE NEWS TABLE *************/
+const btnlastNews = document.querySelector(".last-news");
+const btnmoreNews = document.querySelector(".more-news");
+const lastNewsContent = document.querySelector("#last");
+const moreNewsContent = document.querySelector("#more");
+
+btnlastNews.addEventListener("click", () => {
+    btnlastNews.classList.add("active");
+    btnmoreNews.classList.remove("active");
+    lastNewsContent.style.display = "block";
+    moreNewsContent.style.display = "none";
+});
+
+btnmoreNews.addEventListener("click", () => {
+    btnlastNews.classList.remove("active");
+    btnmoreNews.classList.add("active");
+    lastNewsContent.style.display = "none";
+    moreNewsContent.style.display = "block";
 });
