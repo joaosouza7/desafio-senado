@@ -1,5 +1,6 @@
 @import "colors";
 
+/************* TITLE *************/
 .title {
     width: 100%;
     display: flex;
@@ -22,6 +23,29 @@
     }
 }
 
+/************* SUBTITLE *************/
+.subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 26rem;
+
+    a {
+        color: $lightblue;
+        font-weight: 300;
+        font-size: 18px;
+        text-wrap: nowrap;
+        padding-right: 0.5rem;
+    }
+
+    span {
+        width: 100%;
+        height: 0.3rem;
+        background-color: $lightblue;
+    }
+}
+
+/************* CARD NEWS *************/
 .card-news {
     width: 100%;
     max-width: 26.8rem;
@@ -67,6 +91,7 @@
     }
 }
 
+/************* CARD ESPECIAL *************/
 .card-especial {
     margin-top: 3.3rem;
     width: 100%;
@@ -157,6 +182,7 @@
             font-size: 1.2rem;
             text-transform: uppercase;
             font-weight: 700;
+            margin-bottom: 1rem;
 
             color: $black;
 
@@ -169,6 +195,7 @@
     }
 }
 
+/************* CARD SIMPLE *************/
 .card-simple {
     width: 100%;
     max-width: 39.8rem;
@@ -201,28 +228,7 @@
     }
 }
 
-.subtitle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 26rem;
-
-    a {
-        color: $lightblue;
-        font-weight: 300;
-        font-size: 18px;
-        text-wrap: nowrap;
-        padding-right: 0.5rem;
-    }
-
-    span {
-        width: 100%;
-        height: 0.3rem;
-        background-color: $lightblue;
-    }
-}
-
-/************* MOBILE *****************/
+/************* BREAKPOINTS *****************/
 @media (max-width: 765px) {
     .card-news {
         width: 100%;

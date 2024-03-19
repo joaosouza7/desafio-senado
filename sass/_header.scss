@@ -4,51 +4,7 @@ header {
     color: $white;
 }
 
-.header-top {
-    background-color: $darkblue;
-    height: 5rem;
-    padding: 0 5rem;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    .language {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 1rem;
-        font-size: 1.2rem;
-        cursor: pointer;
-
-        img {
-            width: 2.2rem;
-        }
-
-        i {
-            font-size: 0.8rem;
-        }
-    }
-
-    .logo-senado img {
-        max-width: 16.8rem;
-    }
-
-    .phone-mobile {
-        display: none;
-
-        a {
-            font-size: 2rem;
-            color: $white;
-            transition: all 0.3s ease 0s;
-
-            &:hover {
-                color: $yellow;
-            }
-        }
-    }
-}
-
+/************* SOCIALS *************/
 .socials {
     display: flex;
     align-items: center;
@@ -90,7 +46,67 @@ header {
     }
 }
 
-.header-center {
+.pl {
+    padding-left: 19.9rem;
+}
+
+.link-header {
+    color: $white;
+    font-size: 1.3rem;
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+        color: $yellow;
+    }
+}
+
+/************* HEADER TOP *************/
+.header-top {
+    background-color: $darkblue;
+    height: 5rem;
+    padding: 0 5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .language {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        font-size: 1.2rem;
+
+        img {
+            width: 2.2rem;
+        }
+
+        i {
+            font-size: 0.8rem;
+        }
+    }
+
+    .logo-senado img {
+        max-width: 16.8rem;
+    }
+
+    .phone-mobile {
+        display: none;
+
+        a {
+            font-size: 2rem;
+            color: $white;
+            transition: all 0.3s ease 0s;
+
+            &:hover {
+                color: $yellow;
+            }
+        }
+    }
+}
+
+/************* HEADER MIDDLE *************/
+.header-middle {
     background-color: $blue;
     height: 6rem;
     padding: 0 5rem;
@@ -108,7 +124,7 @@ header {
         button i {
             font-size: 2.5rem;
             color: $white;
-            margin-top: 0.5rem;
+            margin-top: 0.6rem;
         }
 
         img {
@@ -136,13 +152,11 @@ header {
             display: flex;
             align-items: center;
             justify-content: center;
-            cursor: pointer;
 
             input {
                 max-width: 20.7rem;
                 background: none;
                 border: 0;
-
                 color: $white;
 
                 &::placeholder {
@@ -160,6 +174,7 @@ header {
     }
 }
 
+/************* HEADER BOTTOM *************/
 .header-bottom {
     background-color: $blue;
     height: 5rem;
@@ -167,111 +182,204 @@ header {
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
+}
 
-    .links {
-        display: flex;
-        gap: 20px;
+/************* NAV MENU *************/
+.nav {
+    width: 100%;
+
+    .nav__toggle {
+        position: relative;
+        width: 0;
+        height: 0;
     }
 
-    .menu-section-mobile {
-        width: 100%;
-        align-items: center;
-        justify-content: space-between;
-        display: none;
+    .nav__burger,
+    .nav__close {
+        color: $white;
+        position: absolute;
+        width: max-content;
+        height: max-content;
+        inset: 0;
+        margin: auto;
+        font-size: 2rem;
+        cursor: pointer;
+        transition: opacity 0.1s, transform 0.4s;
+    }
 
-        i {
-            color: $white;
-            font-size: 1.8rem;
+    .nav__close {
+        opacity: 0;
+    }
+
+    .show-menu {
+        opacity: 1;
+        top: 16rem;
+        pointer-events: initial;
+    }
+}
+
+/************* SHOW MENU *************/
+.show-icon .nav__burger {
+    opacity: 0;
+    transform: rotate(90deg);
+}
+.show-icon .nav__close {
+    opacity: 1;
+    transform: rotate(90deg);
+}
+
+/************* DROPDOWN *************/
+.dropdown__item {
+    cursor: pointer;
+
+    .dropdown__arrow {
+        font-size: 1.2rem;
+        transition: transform 0.4s;
+    }
+
+    .dropdown__menu {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease-out;
+    }
+
+    .dropdown__link {
+        padding: 1.25rem 1.25rem 1.25rem 2.5rem;
+        color: $white;
+        background-color: $darkblue;
+        display: flex;
+        align-items: center;
+        column-gap: 0.5rem;
+        font-weight: 400;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: $lightblue;
         }
     }
 }
 
-.navbar {
-    ul {
+/************* SHOW DROPDOWN *************/
+.dropdown__item:hover .dropdown__menu {
+    max-height: 100rem;
+    transition: max-height 0.4s ease-in;
+}
+
+/************* ROTATE DROPDOWN ICON *************/
+.dropdown__item:hover .dropdown__arrow {
+    transform: rotate(180deg);
+}
+
+/************* BREAKPOINTS *************/
+
+/************* LARGE DEVICES *************/
+@media screen and (min-width: 1118px) {
+    .nav {
+        height: 3rem;
+        margin-top: 1rem;
         display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 4rem;
+        justify-content: space-between;
 
-        li {
+        .nav__toggle {
+            display: none;
+        }
+
+        .nav__list {
+            height: 100%;
             display: flex;
-            align-items: center;
-            gap: 0.8rem;
-            cursor: pointer;
-            position: relative;
+            column-gap: 3rem;
 
-            .dropdown-menu:before {
-                content: "";
-                position: absolute;
-                width: 1.4rem;
-                height: 1.4rem;
-                background-color: $white;
-                top: -0.1rem;
-                transform: rotate(-45deg);
+            .nav__link {
+                height: 100%;
+                padding: 0;
+                justify-content: initial;
+                column-gap: 0.25rem;
+                font-size: 1.3rem;
             }
+        }
+    }
 
-            .dropdown-menu {
-                position: absolute;
-                z-index: 99;
-                bottom: 0;
-                width: 20rem;
-                background-color: #fff;
-                padding: 1rem;
+    .dropdown__item {
+        position: relative;
 
-                box-sizing: border-box;
-                border-radius: 0.4rem;
-                visibility: hidden;
-                opacity: 0;
-                transition: 0.5s;
-                transform: translateX(0%) translateY(105%);
+        .dropdown__menu {
+            max-height: initial;
+            overflow: initial;
+            position: absolute;
+            left: 0;
+            top: 6rem;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s, top 0.3s;
 
+            .dropdown__link {
+                padding-inline: 1rem 3.5rem;
+            }
+        }
+    }
+
+    /**** SHOW DROPDOWN MENU ****/
+    .dropdown__item:hover .dropdown__menu {
+        opacity: 1;
+        top: 3rem;
+        pointer-events: initial;
+        transition: top 0.3s;
+        z-index: 999;
+    }
+}
+
+//************* MOBILE DEVICES *************/
+@media screen and (max-width: 1118px) {
+    .nav__menu {
+        position: absolute;
+        left: 0;
+        top: 16rem;
+        width: 100%;
+        height: calc(100vh - 3.5rem);
+        overflow: auto;
+        pointer-events: none;
+        opacity: 0;
+        transition: top 0.4s, opacity 0.3s;
+        z-index: 999;
+
+        &::-webkit-scrollbar {
+            width: 0;
+        }
+
+        .nav__list {
+            background-color: $blue;
+            padding-bottom: 0rem;
+
+            .nav__link {
+                color: $white;
+                background-color: $blue;
+                font-weight: 500;
+                padding: 1.25rem 1.5rem;
                 display: flex;
-                flex-direction: column;
-                gap: 1rem;
-                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 25%);
-            }
-
-            .dropdown-item {
-                color: $black;
-                background-color: $white;
-                padding: 8px 15px;
-                border-radius: 4px;
-
-                transition: all 0.3s ease 0s;
+                justify-content: space-between;
+                align-items: center;
+                transition: background-color 0.3s;
+                font-size: 1.2rem;
 
                 &:hover {
-                    background-color: rgba(0, 149, 218, 10%);
-                    color: $lightblue;
+                    background-color: $lightblue;
                 }
             }
+        }
 
-            &:hover .dropdown-menu {
-                visibility: visible;
-                opacity: 1;
-            }
-
-            a {
-                color: $white;
-                font-size: 1.4rem;
-            }
+        .link-header:hover {
+            color: $white;
         }
     }
-}
 
-.link-header {
-    color: $white;
-    font-size: 1.4rem;
-    transition: all 0.3s ease 0s;
-
-    &:hover {
-        color: $yellow;
+    .pl {
+        padding-left: 0;
     }
 }
 
-/************* MOBILE *****************/
 @media (max-width: 987px) {
-    .header-center .link-header {
+    .header-middle .link-header {
         display: none;
     }
 
@@ -280,9 +388,6 @@ header {
             width: 100%;
             display: flex;
             align-items: center;
-        }
-        .links {
-            display: none;
         }
     }
 }
@@ -299,7 +404,7 @@ header {
         }
     }
 
-    .header-center {
+    .header-middle {
         .resources {
             .search-wrapper {
                 input {
@@ -308,15 +413,11 @@ header {
             }
         }
     }
+}
 
-    .header-bottom {
-        .navbar {
-            display: none;
-        }
-
-        .menu-section-mobile {
-            display: flex;
-        }
+@media screen and (max-width: 590px) {
+    .nav__link {
+        padding-inline: 1rem;
     }
 }
 

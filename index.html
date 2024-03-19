@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <!--### MENU ###-->
+    <!--### SIDEBAR MENU ###-->
     <aside class="sidebar">
         <div class="sidebar-header">
             <img src="img/senado-logov2.svg" alt="Logo do Senado" />
@@ -31,7 +31,7 @@
             <!--### MENU ###-->
             <ul class="menu-items">
 
-                <!--### ITEM DO MENU ###-->
+                <!--### MENU ITEM ###-->
                 <li class="menu-item">
                     <div class="submenu-item">
                         <div class="item-title">
@@ -69,7 +69,7 @@
                     </ul>
                 </li>
 
-                <!--### ITEM DO MENU ###-->
+                <!--### MENU ITEM ###-->
                 <li class="menu-item">
                     <div class="submenu-item">
                         <div class="item-title">
@@ -103,7 +103,7 @@
                     </ul>
                 </li>
 
-                <!--### ITEM DO MENU ###-->
+                <!--### MENU ITEM ###-->
                 <li class="menu-item">
                     <div class="submenu-item">
                         <div class="item-title">
@@ -149,7 +149,7 @@
                     </ul>
                 </li>
 
-                <!--### ITEM DO MENU ###-->
+                <!--### MENU ITEM ###-->
                 <li class="menu-item">
                     <div class="submenu-item">
                         <div class="item-title">
@@ -195,7 +195,7 @@
                     </ul>
                 </li>
 
-                <!--### ITEM DO MENU ###-->
+                <!--### MENU ITEM ###-->
                 <li class="menu-item">
                     <div class="submenu-item">
                         <div class="item-title">
@@ -237,7 +237,7 @@
                     </ul>
                 </li>
 
-                <!--### ITEM DO MENU ###-->
+                <!--### MENU ITEM ###-->
                 <li class="menu-item">
                     <div class="submenu-item">
                         <div class="item-title">
@@ -279,7 +279,7 @@
                     </ul>
                 </li>
 
-                <!--### ITEM DO MENU ###-->
+                <!--### MENU ITEM ###-->
                 <li class="menu-item">
                     <div class="submenu-item">
                         <div class="item-title">
@@ -325,7 +325,7 @@
                     </ul>
                 </li>
 
-                <!--### ITEM DO MENU ###-->
+                <!--### MENU ITEM ###-->
                 <li class="menu-item">
                     <div class="submenu-item">
                         <div class="item-title">
@@ -420,12 +420,12 @@
 
     </aside>
 
-    <!-- HEADER -->
+    <!--### HEADER ###-->
     <header>
-        <!-- HEADER TOP -->
+        <!--### HEADER TOP ###-->
         <div id="header" class="header-top">
             <div class="language">
-                <img src="https://flagsapi.com/BR/shiny/64.png" />
+                <img src="https://flagsapi.com/BR/shiny/64.png" alt="Banderia do Brasil" />
                 <span>Português</span>
             </div>
 
@@ -458,8 +458,8 @@
             </div>
         </div>
 
-        <!-- HEADER CENTER -->
-        <div class="header-center">
+        <!--### HEADER MIDDLE ###-->
+        <div class="header-middle">
             <div class="navbar-menu">
                 <button class="btn-sidebar" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
                 <img src="img/senadonoticias-logo.svg" alt="Logo do Senado Notícias" />
@@ -483,97 +483,176 @@
             </div>
         </div>
 
-        <!-- HEADER BOTTOM -->
+        <!--### HEADER BOTTOM ###-->
         <div class="header-bottom">
-            <nav class="navbar">
-                <ul>
-                    <li>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="https://www12.senado.leg.br/noticias/ultimas">Últimas</a>
-                            <a class="dropdown-item" href="https://www12.senado.leg.br/noticias/maisvistas">Mais
-                                vistas</a>
-                            <a class="dropdown-item"
-                                href="https://www12.senado.leg.br/noticias/tags/Pronunciamento">Pronunciamentos</a>
-                            <a class="dropdown-item"
-                                href="https://www12.senado.leg.br/noticias/retrancas/projetos">Projetos de lei</a>
-                        </div>
-                        <a href="#">Notícias</a>
-                        <i class="fa-solid fa-caret-down"></i>
-                    </li>
 
-                    <li>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item"
-                                href="https://www12.senado.leg.br/noticias/infomaterias">Reportagens</a>
-                            <a class="dropdown-item"
-                                href="https://www12.senado.leg.br/noticias/especiais/arquivo-s">Arquivo S</a>
-                            <a class="dropdown-item" href="https://www12.senado.leg.br/noticias/tags/Web%20Stories">Web
-                                Stories</a>
-                            <a class="dropdown-item" href="https://www12.senado.leg.br/noticias/ao-vivo">Grandes
-                                coberturas</a>
-                            <a class="dropdown-item"
-                                href="https://www12.senado.leg.br/noticias/acervo-historico">Acervo</a>
-                        </div>
-                        <a href="">Especiais</a>
-                        <i class="fa-solid fa-caret-down"></i>
-                    </li>
+            <nav class="nav">
+                <div class="nav__toggle" id="nav-toggle">
 
-                    <li>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="https://www12.senado.leg.br/fotos/busca">Banco de imagens</a>
-                            <a class="dropdown-item" href="https://www12.senado.leg.br/noticias/galerias">Galeria</a>
-                        </div>
-                        <a href="">Fotos</a>
-                        <i class="fa-solid fa-caret-down"></i>
-                    </li>
+                    <i class="fa-solid fa-list nav__burger"></i>
+                    <i class="fa-solid fa-circle-xmark nav__close"></i>
+                </div>
 
-                    <li>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="https://www12.senado.leg.br/multimidia">Senado Multimídia</a>
-                            <a class="dropdown-item" href="#">Notificações</a>
-                            <a class="dropdown-item"
-                                href="https://www12.senado.leg.br/noticias/newsletter">Newsletter</a>
-                        </div>
-                        <a href="">Serviços</a>
-                        <i class="fa-solid fa-caret-down"></i>
-                    </li>
+                <!--### NAV MENU ###-->
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <!--### DROPDOWN 1 ###-->
+                        <li class="dropdown__item">
+                            <div class="nav__link">
+                                Notícias <i class="fa-solid fa-sort-down dropdown__arrow"></i>
+                            </div>
 
-                    <li>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item"
-                                href="https://www12.senado.leg.br/noticias/glossario-legislativo">Glossário
-                                legislativo</a>
-                            <a class="dropdown-item"
-                                href="https://www12.senado.leg.br/noticias/entenda-o-assunto">Entenda o assunto</a>
-                            <a class="dropdown-item" href="https://www12.senado.leg.br/manualdecomunicacao">Manual de
-                                Comunicação</a>
-                        </div>
-                        <a href="">Saiba mais</a>
-                        <i class="fa-solid fa-caret-down"></i>
-                    </li>
-                </ul>
+                            <ul class="dropdown__menu">
+                                <li>
+                                    <a href="https://www12.senado.leg.br/noticias/ultimas"
+                                        class="dropdown__link">Últimas</a>
+                                </li>
+
+                                <li>
+                                    <a href="https://www12.senado.leg.br/noticias/maisvistas"
+                                        class="dropdown__link">Mais vistas</a>
+                                </li>
+
+                                <li>
+                                    <a href="https://www12.senado.leg.br/noticias/tags/Pronunciamento"
+                                        class="dropdown__link">Pronunciamentos</a>
+                                </li>
+
+                                <li>
+                                    <a href="https://www12.senado.leg.br/noticias/retrancas/projetos"
+                                        class="dropdown__link">Projetos de Lei</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!--### DROPDOWN 2 ###-->
+                        <li class="dropdown__item">
+                            <div class="nav__link">
+                                Especiais <i class="fa-solid fa-sort-down dropdown__arrow"></i>
+                            </div>
+
+                            <ul class="dropdown__menu">
+                                <li>
+                                    <a href="https://www12.senado.leg.br/noticias/infomaterias"
+                                        class="dropdown__link">Reportagens</a>
+                                </li>
+
+                                <li>
+                                    <a href="https://www12.senado.leg.br/noticias/especiais/arquivo-s"
+                                        class="dropdown__link">Arquivo S</a>
+                                </li>
+
+                                <li>
+                                    <a href="https://www12.senado.leg.br/noticias/tags/Web%20Stories"
+                                        class="dropdown__link">Web Stories</a>
+                                </li>
+
+                                <li>
+                                    <a href="https://www12.senado.leg.br/noticias/ao-vivo"
+                                        class="dropdown__link">Grandes Coberturas</a>
+                                </li>
+
+                                <li>
+                                    <a href="https://www12.senado.leg.br/noticias/acervo-historico"
+                                        class="dropdown__link">Acervo</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!--### DROPDOWN 3 ###-->
+                        <li class="dropdown__item">
+                            <div class="nav__link">
+                                Fotos <i class="fa-solid fa-sort-down dropdown__arrow"></i>
+                            </div>
+
+                            <ul class="dropdown__menu">
+                                <li>
+                                    <a href="https://www12.senado.leg.br/fotos/busca" class="dropdown__link">Banco de
+                                        Imagens</a>
+                                </li>
+
+                                <li>
+                                    <a href="https://www12.senado.leg.br/noticias/galerias"
+                                        class="dropdown__link">Galeria</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!--### DROPDOWN 4 ###-->
+                        <li class="dropdown__item">
+                            <div class="nav__link">
+                                Serviços <i class="fa-solid fa-sort-down dropdown__arrow"></i>
+                            </div>
+
+                            <ul class="dropdown__menu">
+                                <li>
+                                    <a href="https://www12.senado.leg.br/multimidia" class="dropdown__link">Senado
+                                        Multímidia</a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="dropdown__link">Notificações</a>
+                                </li>
+
+                                <li>
+                                    <a href="https://www12.senado.leg.br/noticias/newsletter"
+                                        class="dropdown__link">Newsletter</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!--### DROPDOWN 5 ###-->
+                        <li class="dropdown__item">
+                            <div class="nav__link">
+                                Saiba Mais <i class="fa-solid fa-sort-down dropdown__arrow"></i>
+                            </div>
+
+                            <ul class="dropdown__menu">
+                                <li>
+                                    <a href="https://www12.senado.leg.br/noticias/glossario-legislativo"
+                                        class="dropdown__link">Glossário legislativo</a>
+                                </li>
+
+                                <li>
+                                    <a href="https://www12.senado.leg.br/noticias/entenda-o-assunto"
+                                        class="dropdown__link">Entenda o assunto</a>
+                                </li>
+
+                                <li>
+                                    <a href="https://www12.senado.leg.br/manualdecomunicacao"
+                                        class="dropdown__link">Manual de comunicação</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <span class="pl"></span>
+                        <li class="nav__link">
+                            <a class="link-header"
+                                href="https://www12.senado.leg.br/noticias/destaques/atos-de-8-de-janeiro/pagina/1">Atos
+                                antidemocráticos de 8 de janeiro</a>
+                        </li>
+
+                        <li class="nav__link">
+                            <a class="link-header"
+                                href="https://www12.senado.leg.br/noticias/destaques/reforma-tributaria/pagina/1">Reforma
+                                Tributária</a>
+                        </li>
+
+                        <li class="nav__link">
+                            <a class="link-header"
+                                href="https://www12.senado.leg.br/noticias/destaques/senado-200-anos/pagina/1">Senado
+                                200 anos</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
-
-            <div class="links">
-                <a class="link-header"
-                    href="https://www12.senado.leg.br/noticias/destaques/atos-de-8-de-janeiro/pagina/1">Atos
-                    antidemocráticos de 8 de janeiro</a>
-                <a class="link-header"
-                    href="https://www12.senado.leg.br/noticias/destaques/reforma-tributaria/pagina/1">Reforma
-                    Tributária</a>
-                <a class="link-header"
-                    href="https://www12.senado.leg.br/noticias/destaques/senado-200-anos/pagina/1">Senado 200 anos</a>
-            </div>
-
-            <div class="menu-section-mobile">
-                <button><i class="fa-solid fa-align-left"></i></button>
-                <i class="fa-solid fa-angles-down"></i>
-            </div>
         </div>
     </header>
 
+    <!--### HOME ###-->
     <main>
         <div class="container">
+            <!--### TITLE ###-->
             <div class="title">
                 <span></span>
                 <h1>Príncipais notícias</h1>
@@ -582,10 +661,11 @@
 
             <section class="home">
                 <div class="left">
+                    <!--### MAIN NEWS ###-->
                     <a href="https://www12.senado.leg.br/noticias/materias/2024/03/15/discussao-sobre-criminalizacao-de-posse-de-drogas-chega-ao-plenario"
                         class="news-link">
                         <div class="main-news">
-                            <img src="img/img2.jpeg"
+                            <img src="img/img-mainnews.jpeg"
                                 alt="Discussão sobre criminalização de posse de drogas chega ao Plenário" />
                             <div class="overlay">
                                 <div class="main-content">
@@ -598,6 +678,7 @@
                         </div>
                     </a>
 
+                    <!--### CARDS ###-->
                     <div class="cards">
                         <a class="card-news"
                             href="https://www12.senado.leg.br/noticias/materias/2024/03/15/pedro-simon-um-franciscano-mordaz-na-tribuna-do-senado">
@@ -635,6 +716,7 @@
                 </div>
 
                 <div class="right">
+                    <!--### TABLE ###-->
                     <div class="senado27">
                         <a href="https://www12.senado.leg.br/noticias/25anos"><img src="img/espelho.png"
                                 alt="Agência Senado 27 anos" /></a>
@@ -670,7 +752,7 @@
                     <a class="multimidia-link" href="https://www12.senado.leg.br/multimidia">
                         <img class="multimidia-logo" src="img/multimidia-logo.png" alt="Senado Multimídia" />
                         <span></span>
-                        <img class="cover-img" src="img/img3.jpg" alt="Congresso Nacional" />
+                        <img class="cover-img" src="img/img-gallery1.jpg" alt="Congresso Nacional" />
 
                         <div class="multimidia-text">
 
@@ -685,6 +767,7 @@
     <!--### WEB STORIES/ESPECIALS ###-->
     <section class="story">
         <div class="container">
+
             <div class="section-wrapper">
                 <!-- ### WEB STORIES ### -->
                 <div class="web-stories">
@@ -693,7 +776,7 @@
                         <span></span>
                     </div>
 
-                    <!-- ### SWIPER ### -->
+                    <!-- ### SWIPER WEB STORIES ### -->
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide"><img src="img/story1.png" alt="Abdias Nascimento" /></div>
@@ -704,7 +787,7 @@
                     </div>
                 </div>
 
-                <!-- ### ESPECIAIS ### -->
+                <!-- ### CARDS ESPECIALS ### -->
                 <div class="especials">
                     <div class="subtitle">
                         <a href="https://www12.senado.leg.br/noticias/tags/Web%20Stories">Especiais</a>
@@ -796,13 +879,14 @@
     <!--### GALLERY ###-->
     <section class="gallery">
         <div class="container">
+
             <div class="title">
                 <span></span>
                 <h1>Galeria</h1>
                 <span></span>
             </div>
 
-            <!-- Swiper Gallery -->
+            <!--### SWIPER GALLERY ###-->
             <div class="swiper swiperGallery" id="swiper-gallery">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -814,7 +898,8 @@
                                 <a href="https://www.instagram.com/agenciasenado/">Instagram</a>
                             </div>
                         </div>
-                        <img src="img/img3.jpg" alt="Congresso Nacional" />
+                        <img src="img/img-gallery1.jpg" alt="Projeção alusiva ao Dia Internacional da Mulher na fachada do Palácio do
+                        Congresso." />
                         <div class="info-container bottom">
                             <p>(08/03/2024) Projeção alusiva ao Dia Internacional da Mulher na fachada do Palácio do
                                 Congresso.</p>
@@ -831,7 +916,8 @@
                                 <a href="https://www.instagram.com/agenciasenado/">Instagram</a>
                             </div>
                         </div>
-                        <img src="img/img4.jpg" alt="Congresso Nacional" />
+                        <img src="img/img-gallery2.jpg" alt="Visão geral da bancada do Plenário durante sessão de premiações e
+                        condecorações" />
                         <div class="info-container bottom">
                             <p>(06/03/2024) Visão geral da bancada do Plenário durante sessão de premiações e
                                 condecorações</p>
@@ -848,7 +934,8 @@
                                 <a href="https://www.instagram.com/agenciasenado/">Instagram</a>
                             </div>
                         </div>
-                        <img src="img/img5.jpg" alt="Congresso Nacional" />
+                        <img src="img/img-gallery3.jpg"
+                            alt="Visão geral da mesa do Plenário durante sessão de premiações e condecorações" />
                         <div class="info-container bottom">
                             <p>(06/03/2024) Visão geral da mesa do Plenário durante sessão de premiações e condecorações
                             </p>
@@ -866,12 +953,14 @@
     <!--### BILLS ###-->
     <section class="bills">
         <div class="container">
+
             <div class="title">
                 <span></span>
                 <h1>Projetos de Lei</h1>
                 <span></span>
             </div>
 
+            <!--### BILLS CARDS ###-->
             <div class="bills-area">
                 <a href="https://www12.senado.leg.br/noticias/materias/2024/03/15/projeto-regulamenta-uso-de-softwares-espioes-pelo-poder-publico"
                     class="card-simple">
@@ -904,12 +993,14 @@
     <!--### STATEMENTS ###-->
     <section class="statements">
         <div class="container">
+
             <div class="title">
                 <span></span>
                 <h1>Pronunciamentos</h1>
                 <span></span>
             </div>
 
+            <!--### STATEMENTS CARDS ###-->
             <div class="statements-area">
                 <a href="https://www12.senado.leg.br/noticias/materias/2024/03/15/tse-atropela-congresso-com-tribunal-da-verdade-diz-girao"
                     class="card-simple">
@@ -942,6 +1033,7 @@
 
     <!--### FOOTER ###-->
     <footer>
+        <!--### FOOTER TOP ###-->
         <div class="container footer-top">
             <div class="col">
                 <h4>Servidores</h4>
@@ -996,6 +1088,7 @@
             </div>
         </div>
 
+        <!--### FOOTER MIDDLE ###-->
         <div class="footer-middle">
             <div class="icons">
                 <a href="https://www.camara.leg.br/"><img src="img/icon-camara.svg"
@@ -1019,6 +1112,7 @@
             </div>
         </div>
 
+        <!--### FOOTER BOTTOM ###-->
         <div class="footer-bottom">
             <div class="address">
                 <i class="fa-solid fa-location-dot"></i>
@@ -1038,6 +1132,7 @@
         <img src="img/libras.png" alt="Acessibilidade" />
     </a>
 
+    <!--### SCRIPTS ###-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
